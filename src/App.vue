@@ -1,28 +1,33 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Fragment>
+    <Header />
+    <main>
+      <index />
+    </main>
+  </Fragment>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { Fragment } from "vue-fragment";
+import Index from "./components/pages/Index";
+import Header from "./components/organisms/Header";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Index,
+    Header,
+    Fragment,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300&family=Poppins:wght@300;400;500;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 </style>
