@@ -2,7 +2,10 @@
   <article>
     <Img :src="require('@/assets/images/fullscreenImage.jpg')" />
     <div>
-      <h2>Summer Styles <span>50% OFF</span></h2>
+      <h2>
+        Summer Styles
+        <span>50% OFF</span>
+      </h2>
       <List>
         <LinkItem :href="'#'">Mens Clothing</LinkItem>
         <LinkItem :href="'#'">Womens Clothing</LinkItem>
@@ -20,14 +23,15 @@ export default {
   components: {
     Img,
     List,
-    LinkItem,
-  },
+    LinkItem
+  }
 };
 </script>
 
 <style scoped lang="scss">
 article {
   position: relative;
+  white-space: pre;
   & > div {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -61,14 +65,15 @@ article {
         content: "";
         position: absolute;
         height: 3px;
-        transition: all 0.5s;
-        width: 0%;
+        transition: transform ease-in-out 0.3s;
+        width: 100%;
         background: #fff;
         bottom: 0;
         left: 0;
+        transform: scaleX(0);
       }
       &:hover::after {
-        width: 100%;
+        transform: scaleX(0.99);
       }
     }
   }

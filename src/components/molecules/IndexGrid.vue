@@ -26,14 +26,15 @@ export default {
   components: {
     List,
     LinkItem,
-    Img,
-  },
+    Img
+  }
 };
 </script>
 
 <style scoped lang="scss">
 article {
   margin-top: 100px;
+  padding: 0 2rem;
   & > ul {
     display: grid;
     grid-auto-rows: 400px;
