@@ -1,16 +1,8 @@
 <template>
   <article>
     <List>
-      <li>
-        <Img :src="require('@/assets/images/fullscreenImage2.jpg')" />
-      </li>
-
-      <li>
-        <Img :src="require('@/assets/images/fullscreenImage2.jpg')" />
-      </li>
-
-      <li>
-        <Img :src="require('@/assets/images/fullscreenImage2.jpg')" />
+      <li class="gridItem">
+        <Img :src="require('@/assets/images/girl.png')" />
       </li>
     </List>
   </article>
@@ -39,9 +31,24 @@ article {
     place-content: center;
     grid-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
-    & figure {
-      width: 100%;
-      height: 100%;
+    & li {
+      & figure {
+        width: 100%;
+        height: 100%;
+        & img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.gridItem {
+  & figure {
+    width: 100%;
+    height: 100%;
+    & >>> img {
+      width: auto;
     }
   }
 }
