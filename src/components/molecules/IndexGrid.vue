@@ -2,7 +2,7 @@
   <article>
     <List>
       <li class="gridItem">
-        <Img :src="require('@/assets/images/girl.png')" />
+        <Img :alt="'Female with fashionable clothes'" :src="require('@/assets/images/girl.png')" />
       </li>
     </List>
   </article>

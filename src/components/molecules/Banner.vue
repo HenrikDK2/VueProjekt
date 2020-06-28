@@ -1,8 +1,8 @@
 <template>
   <article>
     <figure ref="imgContainer">
-      <img ref="bottomImg" :class="'hidden'" />
-      <img ref="topImg" />
+      <img ref="bottomImg" alt="Banner Image" :class="'hidden'" />
+      <img ref="topImg" alt="Banner Image" />
     </figure>
 
     <div>

@@ -1,6 +1,6 @@
 <template>
   <figure>
-    <img @dragstart="stopDrag" :src="src" />
+    <img @dragstart="stopDrag" :alt="alt" :src="src" />
   </figure>
 </template>
 
@@ -10,15 +10,18 @@ export default {
   props: {
     src: {
       type: String,
-      required: true,
+      required: true
     },
+    alt: {
+      type: String,
+      required: true
+    }
   },
   methods: {
     stopDrag: function(e) {
       e.preventDefault();
-      console.log("Test");
-    },
-  },
+    }
+  }
 };
 </script>
 
