@@ -17,8 +17,8 @@ export default {
   components: {
     Index,
     Header,
-    Fragment,
-  },
+    Fragment
+  }
 };
 </script>
 
@@ -29,5 +29,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1500px;
 }
 </style>

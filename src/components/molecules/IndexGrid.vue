@@ -1,17 +1,17 @@
 <template>
   <article>
     <List>
-      <LinkItem>
+      <li>
         <Img :src="require('@/assets/images/fullscreenImage2.jpg')" />
-      </LinkItem>
+      </li>
 
-      <LinkItem>
+      <li>
         <Img :src="require('@/assets/images/fullscreenImage2.jpg')" />
-      </LinkItem>
+      </li>
 
-      <LinkItem>
+      <li>
         <Img :src="require('@/assets/images/fullscreenImage2.jpg')" />
-      </LinkItem>
+      </li>
     </List>
   </article>
 </template>
@@ -19,13 +19,11 @@
 <script>
 import Img from "../atoms/Img";
 import List from "../atoms/List";
-import LinkItem from "../atoms/LinkItem";
 
 export default {
   name: "IndexGrid",
   components: {
     List,
-    LinkItem,
     Img
   }
 };
@@ -33,7 +31,7 @@ export default {
 
 <style scoped lang="scss">
 article {
-  margin-top: 100px;
+  margin: 100px 0;
   padding: 0 2rem;
   & > ul {
     display: grid;
